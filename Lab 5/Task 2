@@ -1,0 +1,23 @@
+tree = {
+    'A': ['B', 'C'],
+    'B': ['D', 'E'],
+    'C': ['F', 'G'],
+    'D': [],
+    'E': [],
+    'F': [],
+    'G': []
+}
+def bfs_tree(tree, root):
+    visited = []
+    queue = []
+    visited.append(root)
+    queue.append(root)
+    while queue:
+        current_node = queue.pop(0)
+        print(current_node, end=" ")
+        for child in tree[current_node]:
+            if child not in visited:
+                visited.append(child)
+                queue.append(child)
+print("BFS Traversal of Binary Tree:")
+bfs_tree(tree, 'A')

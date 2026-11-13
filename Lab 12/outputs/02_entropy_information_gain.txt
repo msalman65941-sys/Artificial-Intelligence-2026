@@ -1,0 +1,10 @@
+TASK 02 - ENTROPY AND INFORMATION GAIN
+Slide 9-10 example (9/14 vs 5/14) entropy: 0.940286
+Training records: 614
+Parent entropy: 0.932752
+Best first split (trained on TRAINING data only): Glucose <= 154.500
+Left records (<=): 515, left entropy: 0.818130
+Right records (>): 99, right entropy: 0.638162
+Weighted child entropy: 0.789112
+Information gain = parent - weighted = 0.143640
+NOTE: sklearn uses CART-style binary splits, with entropy criterion; not exact classic ID3.

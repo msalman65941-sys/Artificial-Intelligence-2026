@@ -1,0 +1,8 @@
+TASK 01 - DATASET SUMMARY
+Total rows: 768
+Features: Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age
+Target: Outcome
+Class counts: {0: 500, 1: 268}
+Missing cell count: 0
+Zero counts in measurements: {'Glucose': 5, 'BloodPressure': 35, 'SkinThickness': 227, 'Insulin': 374, 'BMI': 11}
+Note: zeros were not modified in this baseline lab.

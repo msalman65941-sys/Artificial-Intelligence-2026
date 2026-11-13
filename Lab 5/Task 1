@@ -1,0 +1,22 @@
+network_graph = {
+    'A': ['B', 'C'],
+    'B': ['A', 'D', 'E'],
+    'C': ['A', 'F'],
+    'D': ['B'],
+    'E': ['B', 'F'],
+    'F': ['C', 'E']
+}
+def bfs(graph, start_node):
+    visited = []
+    queue = []
+    visited.append(start_node)
+    queue.append(start_node)
+    while queue:
+        current_node = queue.pop(0)
+        print(current_node, end=" ")
+        for neighbour in graph[current_node]:
+            if neighbour not in visited:
+                visited.append(neighbour)
+                queue.append(neighbour)
+print("BFS Network Traversal starting from node A:")
+bfs(network_graph, 'A')
