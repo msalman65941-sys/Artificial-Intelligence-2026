@@ -1,0 +1,6 @@
+Place these downloaded CSV files in this folder:
+1. heart.csv
+2. Telco-Customer-Churn.csv
+3. mushrooms.csv
+
+Or run: python download_datasets.py from the project root.
